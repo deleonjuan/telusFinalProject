@@ -1,0 +1,34 @@
+.app-container {
+  background-image: url("./BigSur.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.glass{
+    background-color: rgba(255, 255, 255, 25%);
+    padding: 1rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(15px) ;
+}
+
+textarea{
+    width: 25rem;
+    height: 30rem;
+    border-radius: 0.5rem;
+    padding: 10px;
+    resize: none !important;
+}
+
+textarea:disabled{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.app-container button{
+    padding: 8px 15px;
+    background-color: rgb(2, 122, 255);
+    border-radius: 8px !important;
+    color: white;
+    border: none;
+    box-shadow: 0 15px 10px -12px rgb(0, 217, 255);
+}

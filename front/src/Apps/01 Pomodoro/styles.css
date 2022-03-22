@@ -1,0 +1,49 @@
+#container {
+  width: 250px;
+  /* height: 500px; */
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #e6e6e6;
+  box-shadow: 30px 30px 25px -15px rgb(0 0 0 / 25%);
+}
+
+#container h6,
+#container h1,
+span {
+  color: #666;
+}
+
+#StylizedButton {
+  width: 100%;
+  box-shadow: 4px 4px 12px #c1c1c1, -4px -4px 12px #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  user-select: none;
+  cursor: pointer;
+}
+
+#StylizedButton span {
+  text-align: center;
+  line-height: 20px;
+}
+
+.counter h1 {
+  font-weight: bolder;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  line-height: 0.8;
+}
+
+.counter > div{
+  position: absolute;
+  -webkit-background-clip: text !important;
+}
+
+.counter > div h1{
+  color: transparent !important;
+  -webkit-background-clip: text !important;
+}
