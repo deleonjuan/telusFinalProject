@@ -12,7 +12,7 @@
     backdrop-filter: blur(15px) ;
 }
 
-textarea{
+#jsontosvg textarea{
     width: 25rem;
     height: 30rem;
     border-radius: 0.5rem;
@@ -20,7 +20,7 @@ textarea{
     resize: none !important;
 }
 
-textarea:disabled{
+#jsontosvg textarea:disabled{
     background-color: rgba(255, 255, 255, 0.5);
 }
 

@@ -45,6 +45,7 @@ function MaskedInputApp() {
 
   return (
     <div
+      id="maskedinput"
       style={{
         height: "100%",
         backgroundColor: "#EEE",

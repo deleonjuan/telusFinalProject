@@ -50,6 +50,7 @@ function JSONtoCSVApp() {
 
   return (
     <div
+      id="jsontosvg"
       style={{
         height: "96.8vh",
         backgroundColor: "#EEE",

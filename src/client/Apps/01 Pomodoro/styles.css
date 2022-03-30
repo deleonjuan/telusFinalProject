@@ -1,4 +1,4 @@
-#container {
+#pomodoro #container {
   width: 250px;
   /* height: 500px; */
   padding: 20px;
@@ -7,13 +7,13 @@
   box-shadow: 30px 30px 25px -15px rgb(0 0 0 / 25%);
 }
 
-#container h6,
-#container h1,
-span {
+#pomodoro #container h6,
+#pomodoro #container h1,
+#pomodoro span {
   color: #666;
 }
 
-#StylizedButton {
+#pomodoro #StylizedButton {
   width: 100%;
   box-shadow: 4px 4px 12px #c1c1c1, -4px -4px 12px #ffffff;
   border-radius: 10px;
@@ -25,12 +25,12 @@ span {
   cursor: pointer;
 }
 
-#StylizedButton span {
+#pomodoro #StylizedButton span {
   text-align: center;
   line-height: 20px;
 }
 
-.counter h1 {
+#pomodoro .counter h1 {
   font-weight: bolder;
   font-size: 50px;
   margin: 0;
@@ -38,12 +38,12 @@ span {
   line-height: 0.8;
 }
 
-.counter > div{
+#pomodoro .counter > div{
   position: absolute;
   -webkit-background-clip: text !important;
 }
 
-.counter > div h1{
+#pomodoro .counter > div h1{
   color: transparent !important;
   -webkit-background-clip: text !important;
 }

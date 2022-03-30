@@ -78,6 +78,7 @@ const PomodoroApp = () => {
 
   return (
     <div
+      id="pomodoro"
       style={{
         height: "100vh",
         backgroundColor: "#F6F6F6",

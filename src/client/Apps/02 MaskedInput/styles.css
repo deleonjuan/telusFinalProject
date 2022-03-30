@@ -1,13 +1,13 @@
-input:focus{
+#maskedinput input:focus{
     outline: none;
 }
 
-.input-container{
+#maskedinput .input-container{
     border: solid 3px transparent;
     box-shadow: 0 2px 5px #aaa;
 }
 
-.input-container:focus-within{
+#maskedinput .input-container:focus-within{
     border: solid 3px #03a9f4;
     box-shadow: 0 0 0 4px #03a9f438;
 }
