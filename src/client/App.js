@@ -10,18 +10,7 @@ import JSONtoCSV from "./Apps/03 JSONtoCSV";
 import URLShortener from "./Apps/04 URLShortener";
 import OneTimeSecret from "./Apps/05 One time Secret";
 
-// Although the page does not ever refresh, notice how
-// React Router keeps the URL up to date as you navigate
-// through the site. This preserves the browser history,
-// making sure things like the back button and bookmarks
-// work properly.
-
-const App = (props) => {
-
-  // useEffect(() => {
-  //   console.log("PROPS", props);
-  // })
-
+const App = () => {
   return (
     <Router>
       <div id="menu" className="d-flex flex-row gap-3 bg-black ps-3">
@@ -47,9 +36,14 @@ const App = (props) => {
           <Route exact path="/json-to-csv">
             <JSONtoCSV />
           </Route>
+
           <Route exact path="/url-shortener">
             <URLShortener />
           </Route>
+          <Route exact path="/url-shortener/:urlHash">
+            <URLShortener />
+          </Route>
+
           <Route exact path="/one-time-secret">
             <OneTimeSecret />
           </Route>
