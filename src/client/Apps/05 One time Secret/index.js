@@ -57,7 +57,7 @@ const OneTimeSecret = (props) => {
 
           {props.hash && (
             <span>
-              {window.location.href}
+              {window.location.href}/
               {props.hash}
             </span>
           )}
