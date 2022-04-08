@@ -27,7 +27,7 @@ const setLoader = (loader) => ({
 const getMessage = (urlHash) => async (dispatch) => {
   dispatch(setLoader(true));
   try{
-    const res = await redaxios.get(`http://localhost:5000/api/v1/secret/${urlHash}`)
+    const res = await redaxios.get(`https://telus-final-project.herokuapp.com/api/v1/secret/${urlHash}`)
     dispatch(setMessage(res.data? res.data.secret : null))
   }catch(err){
     console.log(err);
@@ -38,7 +38,7 @@ const getMessage = (urlHash) => async (dispatch) => {
 const postMessage = (data) => async (dispatch) => {
   dispatch(setLoader(true));
   try{
-    const res = await redaxios.post(`http://localhost:5000/api/v1/secret/`, data)
+    const res = await redaxios.post(`https://telus-final-project.herokuapp.com/api/v1/secret/`, data)
     dispatch(setHash(res.data? res.data.hash : null))
   }catch(err){
     console.log(err);

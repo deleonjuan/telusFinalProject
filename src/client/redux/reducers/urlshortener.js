@@ -27,7 +27,7 @@ const setLoader = (loader) => ({
 const getUrl = (urlHash) => async (dispatch) => {
   dispatch(setLoader(true));
   try{
-    const res = await redaxios.get(`http://localhost:5000/api/v1/urlshrt/${urlHash}`)
+    const res = await redaxios.get(`https://telus-final-project.herokuapp.com/api/v1/urlshrt/${urlHash}`)
     dispatch(setUrl(res.data? res.data.url : null))
   }catch(err){
     console.log(err);
@@ -38,7 +38,7 @@ const getUrl = (urlHash) => async (dispatch) => {
 const postUrl = (data) => async (dispatch) => {
   dispatch(setLoader(true));
   try{
-    const res = await redaxios.post(`http://localhost:5000/api/v1/urlshrt/`, data)
+    const res = await redaxios.post(`https://telus-final-project.herokuapp.com/api/v1/urlshrt/`, data)
     dispatch(setNewUrl(res.data? res.data.hash : null))
   }catch(err){
     console.log(err);

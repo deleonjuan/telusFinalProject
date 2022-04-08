@@ -24,7 +24,8 @@
   },
   "scripts": {
     "start": "node ./src/server.js",
-    "heroku-postbuild": "npm install && react-scripts build",
+    "heroku-postbuild": "react-scripts build",
+
     "start-react": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -50,7 +51,7 @@
     ]
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
+  "main": "./src/server.js",
   "devDependencies": {},
   "author": "",
   "license": "ISC"
