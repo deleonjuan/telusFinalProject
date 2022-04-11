@@ -9,7 +9,7 @@ const routerApi = require("./server/routes");
  * https://developer.mozilla.org/es/docs/Web/HTTP/Headers/Access-Control-Allow-Origin
  */
 function cors(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Origin", "https://telus-final-project.vercel.app");
   res.header("Access-Control-Allow-Headers", "Content-Type");
   next();
 }
